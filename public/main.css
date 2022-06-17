@@ -1,0 +1,108 @@
+/* import font from google api */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Titillium+Web&display=swap');
+
+html,body{
+    margin: 0;
+    background: linear-gradient(to right, #0f0c29,#302b63,#24243c);
+}
+/* Variables */
+
+:root{
+    --Rubik:'Rubik', sans-serif;
+    --Titillium: 'Titillium Web', sans-serif;
+}
+.container{
+    background: #282c34;
+    background: url('../assets/Night_3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 92vw;
+    height:89vh;
+    font-size:calc(10px + vmin);
+    color:white;
+    margin:0 auto;
+    margin-top: 4rem;
+    text-align: center;
+}
+.navbar{
+    display:grid;
+    grid-template-columns: 10% 90%;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    font-family: var(--Rubik);
+}
+
+.navbar > .nav-items{
+    text-align: right;
+}
+.navbar > .brand-name > h5{
+    padding:2rem 2rem;
+    margin: 0;
+}
+.nav-items > .navbar-nav{
+    list-style-type: none;
+}
+.navbar-nav > .nav-link{
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.9rem;
+    font-family: var(--Rubik);
+}
+.navbar-nav > .sign-in{
+    border:none;
+    padding: .4rem 2rem;
+    border-radius:1rem;
+    margin-right: 2rem;
+    background-color: #ee5;
+    font-family: var(--Rubik);
+}
+/* Styling Checkbox */
+.lightSwitch{
+    width: 40px;
+    height:7px;
+    background: rgb(192, 188, 188);
+    margin:20px auto ;
+    border-radius: 100px;
+    position: relative;
+}
+.lightSwitch > label{
+    display: block;
+    width:19px;
+    height: 19px;
+    background:linear-gradient(to bottom ,#536452 0%, #57dd52 40%,#95e669 100%);
+    border-radius: 50%;
+    position:absolute;
+    top:-5px;
+    left: 0px;
+    box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.7px) ;
+    transition: all 1s ease;
+}
+
+.lightSwitch > input[type="checkbox"]{
+    visibility: hidden;
+}
+.lightSwitch  input[type="checkbox"]:checked + label{
+background: red !important;
+left:25px;
+}
+.container > .imglayer{
+    position: absolute;
+    top: 52%;
+    left:15%;
+}
+.imglayer > img{
+    width: 70vw;
+    height: fit-content;
+}
+.container > h4{
+    font-size: 10rem;
+    margin: 0.4rem;
+    padding:0.1rem;
+    font-family: var(--Titillium);
+    margin-top: 1rem;
+    background: linear-gradient(to bottom,#ffffff,#adadaa) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
